@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             h2 {
                 color: white;
@@ -21,8 +23,182 @@
             p{
                 color: white;
             }
+
+            .accordion {
+            background-color: rgb(66, 66, 66);
+            color: rgb(245, 245, 245);
+            cursor: pointer;
+            padding: 14px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            width: 400px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:small;
+        }
+
+        .active, .accordion:hover {
+            background-color: rgb(20, 20, 20);
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 14px;
+            margin: 0px;
+            border: 0px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        a {
+            padding: 14px 3%;
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:medium
+        }
+
+        body {
+            margin: 0px;
+        }
         </style>
+</head>
+<body>
+        <nav>
+        <a href="index.html">HOME</a>
+        <a href="wyatt.html">Wyatt</a>
+        <a href="matt.html">Matt</a>
+        <a href="david.html">David</a>
+    </nav>
+    <nav>
+        <a href="anna.html">Anna</a>
+        <a href="kaitlyn.html">Kaitlyn</a>
+        <a href="abigayle.html">Abigayle</a>
+        <a href="riley.html">Riley</a>
+    </nav>
+
+    <button class="accordion">Click here to see the code I wrote!</button>
+        <div class="panel" style="color: limegreen; background-color: rgb(20, 20, 20);">
+            <figure>
+                <pre>
+                    <code style="white-space: break-spaces;">
+                        &lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;style&gt;
+            h2 {
+                color: white;
+                text-shadow: 3px 3px 2px gray;
+            }
+            h1 {
+                color: black;
+                text-shadow: 3px 3px 2px white;
+            }
+            
+            body {
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-image: url("https://img.redbull.com/images/c_crop,w_6136,h_4091,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2018/07/06/56f45d1c-960a-436b-af68-16fd7c145d7c/parkour-collection");
+            }
+            
+            p{
+                color: white;
+            }
+        &lt;/style&gt;
         
+        &lt;h2&gt;JavaScript Alert&lt;/h2&gt;
+
+&lt;button onclick="myFunction()"&gt;Press me&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+  alert("Why did you press me!");
+}
+&lt;/script&gt;
+        
+        &lt;script&gt;
+document.write(Date());
+&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+&lt;button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()"&gt;
+Click me to display Date and Time.&lt;/button&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+        
+        &lt;h1&gt;Extreme parkour&lt;/h1&gt;
+        &lt;p&gt;&lt;sub&gt;it's so&lt;/sub&gt; extreme.&lt;/p&gt;
+        &lt;h2&gt;what is it?&lt;/h2&gt;
+            &lt;img src="" alt="" /&gt;
+            &lt;p&gt;Parkour is an extreme sport that has been popular in Europe for a few years. This sport has now made it across the Atlantic and is quickly gaining popularity in the United States. Participants of this activity, known as parkouristes, try to overcome obstacles in their environment in the most efficient manner possible.&lt;/p&gt;
+            
+        &lt;h2&gt;History&lt;/h2&gt;
+            &lt;img src="" alt="" /&gt;
+            &lt;p&gt;The Parkour adventure began in France in the 1990s, in Lisses and Evry, in the outskirts of Paris. David Belle originally developed the Parkour concept according to precepts about the art of movement laid down by his father, who was a Parisian firefighter and it was special in october 2009 and it still goes on today&lt;/p&gt;
+            
+        &lt;h2&gt;Dangers&lt;/h2&gt;
+            &lt;img src="" alt="" /&gt;
+            &lt;p&gt;You can fall off of a building and fall to your death.
+Trespassing
+Jumping to roof to roof
+Climbing on high ledges and rails
+&lt;/p&gt;
+            
+        &lt;h2&gt;Best of the Best&lt;/h2&gt;
+            &lt;img src="" alt="" /&gt;
+            &lt;p&gt;&lt;/p&gt;
+     &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0Kvw2BPKjz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;h2&gt;Stories&lt;/h2&gt;
+            &lt;img src="" alt="" /&gt;
+            &lt;p&gt;Parkour 1930 Remain humble. Extreme Sports is not so new, kids, so enjoy yourselves and please remember to keep grounded. It's not all about being original&lt;/p&gt;
+            
+       &lt;h2&gt;Conclusion&lt;/h2&gt;
+            &lt;img src="" alt="" /&gt;
+            &lt;p&gt; Parkour is a new sport based on athletically and artistically . In Simmel's (1911/1971) classic essay on the subject, he describes adventure ... Taking risks: Extreme sports and the Embrace of risk in advanced liberal societies.Parkour training is an effective intervention to improve cardiorespiratory fitness and strength in adolescent males. Parkour is a viable form of physical activity to improve the health and fitness of children and adolescents.
+this has lasted science 1911 started to be popular in 1980s and it was in a movie called casino royale in 2006 and a campaign started in may 1st 2007
+&lt;/p&gt;
+       &lt;H3&gt;David&lt;/H3&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </figure>
+        </div>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+    
+    
+            var panel = this.nextElementSibling;
+        
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
         <h2>JavaScript Alert</h2>
 
 <button onclick="myFunction()">Press me</button>
